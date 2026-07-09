@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chocolatier Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+  @theme {
+    --color-ink: #1b0f16;
+    --color-cocoa: #2c1524;
+    --color-rose: #a63c52;
+    --color-sage: #7c9070;
+    --color-gold: #c9974c;
+    --color-cream: #f8e9d2;
+    --color-mist: #e9efe9;
+    --color-page: #fdf8f0;
+    --font-display: "Poppins", sans-serif;
+    --font-sans: "Inter", sans-serif;
+  }
+</style>
+</head>
+<body class="bg-page text-ink font-sans">
+
+  <div class="max-w-6xl mx-auto px-4 md:px-6 pt-6 space-y-6">
+
+    <!-- Header -->
+    <header class="bg-cream border border-ink/10 rounded-2xl flex items-center justify-between px-5 py-3">
+      <div class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-full bg-ink text-white text-[10px] font-bold flex items-center justify-center">CB</span>
+        <span class="font-display font-semibold text-sm md:text-base">Chocolatier Bakery</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-ink/70">
+        <a href="#menu" class="hover:text-ink">Menu</a>
+        <a href="#story" class="hover:text-ink">Our Story</a>
+        <a href="#order" class="hover:text-ink">Order</a>
+        <a href="#contact" class="hover:text-ink">Contact</a>
+      </nav>
+      <button class="md:hidden w-9 h-9 rounded-full border border-ink/10 flex items-center justify-center text-ink" aria-label="Menu">
+        &#9776;
+      </button>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-cream border border-ink/10 rounded-3xl p-6 md:p-12">
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div>
+          <p class="md:hidden text-rose text-xs font-semibold tracking-widest uppercase mb-3">
+            Small-batch pastries
+          </p>
+          <p class="hidden md:block text-rose text-xs font-semibold tracking-widest uppercase mb-3">
+            Small-batch pastries and chocolate
+          </p>
+          <h1 class="font-display font-bold text-4xl md:text-5xl leading-tight mb-4">
+            Elegant bakery boxes, made to order.
+          </h1>
+          <p class="text-ink/60 text-sm md:text-base mb-6 max-w-md">
+            Choose from polished cakes, chocolate tarts, croissants, and seasonal pastry trays prepared for pickup.
+          </p>
+          <button class="bg-ink text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-cocoa transition-colors">
+            Order now
+          </button>
+        </div>
+        <div class="aspect-video md:aspect-[4/3] rounded-2xl bg-mist flex items-center justify-center">
+          <span class="text-ink/40 text-sm text-center px-4">Hero video /<br />ChocolatierCTA.mp4</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most ordered -->
+    <section id="menu" class="py-4">
+      <h2 class="md:hidden font-display font-bold text-2xl mb-6">Most ordered</h2>
+      <div class="hidden md:block mb-6">
+        <p class="text-rose text-xs font-semibold tracking-widest uppercase mb-2">Most ordered</p>
+        <h2 class="font-display font-bold text-2xl">The three guests ask for first</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-6 flex items-center">
+            <span class="block w-9 h-9 rounded-full bg-rose"></span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-1">Midnight Ganache Tart</h3>
+            <p class="text-ink/50 text-xs mb-3">Silky dark chocolate custard, cocoa sable crust, and smoked sea salt.</p>
+            <p class="font-semibold text-sm">$12</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-6 flex items-center">
+            <span class="block w-9 h-9 rounded-full bg-gold"></span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-1">Vanilla Cloud Croissant</h3>
+            <p class="text-ink/50 text-xs mb-3">Laminated butter pastry filled with vanilla cream and pearl sugar.</p>
+            <p class="font-semibold text-sm">$8</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-6 flex items-center">
+            <span class="block w-9 h-9 rounded-full bg-sage"></span>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-sm mb-1">Atelier Celebration Box</h3>
+            <p class="text-ink/50 text-xs mb-3">Four polished mini cakes with rotating chocolate and fruit finishes.</p>
+            <p class="font-semibold text-sm">$34</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Ten ways -->
+    <section class="py-4">
+      <p class="text-rose text-xs font-semibold tracking-widest uppercase mb-2">Full menu</p>
+      <h2 class="font-display font-bold text-2xl mb-6">Ten ways to make the table feel special</h2>
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-rose"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Midnight Ganache Tart</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$12</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-gold"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Vanilla Cloud Croissant</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$8</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-sage"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Atelier Celebration Box</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$34</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-cocoa"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Raspberry Rose Eclair</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$9</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-sage"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Pistachio Opera Slice</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$11</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-rose"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Hazelnut Praline Crown</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$13</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-gold"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Lemon Silk Tartlet</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$10</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-sage"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Salted Caramel Brioche</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$7</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-cocoa"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Black Cocoa Truffle Set</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$18</p>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
+          <div class="bg-mist p-4 flex items-center"><span class="block w-8 h-8 rounded-full bg-gold"></span></div>
+          <div class="p-4">
+            <h3 class="font-semibold text-xs mb-1">Seasonal Fruit Mille-Feuille</h3>
+            <p class="text-ink/50 text-[11px] mb-2">Menu card with image, description, quantity, and add-to-cart control.</p>
+            <p class="font-semibold text-xs">$14</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Cart bar (desktop) -->
+    <section class="hidden md:block pb-8">
+      <div class="bg-white rounded-2xl shadow-sm px-6 py-5 flex items-center justify-between">
+        <div>
+          <p class="text-rose text-xs font-semibold tracking-widest uppercase mb-1">Cart</p>
+          <p class="font-semibold text-sm mb-1">Your bakery cart</p>
+          <p class="text-ink/50 text-xs">2 x Midnight Ganache Tart &nbsp;&nbsp; 1 x Vanilla Cloud Croissant &nbsp;&nbsp; 3 items selected</p>
+        </div>
+        <button class="bg-ink text-white text-sm font-medium px-6 py-3 rounded-full whitespace-nowrap hover:bg-cocoa transition-colors">
+          Checkout
+        </button>
+      </div>
+    </section>
+
+    <!-- Cart toast (mobile) -->
+    <section class="md:hidden pb-8">
+      <div class="bg-ink text-white rounded-full px-6 py-4 flex items-center justify-center gap-2 text-sm">
+        <span class="font-semibold">Added to your cart!</span>
+        <span class="text-white/80">See cart here</span>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
