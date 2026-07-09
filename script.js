@@ -8,6 +8,8 @@ menuToggle.addEventListener("click", () => { // Ajoute un événement au clic su
   menuToggle.setAttribute("aria-expanded", String(isOpen)); // Met à jour l'attribut d'accessibilité
 });
 
+
+
 // Fonctionnalité de changement d'image aléatoire pour l'image principale
 const heroImage = document.getElementById("hero-image"); // Récupère l'image principale
 const heroImages = [
@@ -17,7 +19,7 @@ const heroImages = [
 ]; // Liste des images locales disponibles
 const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)]; // Sélectionne une image au hasard
 
-heroImage.addEventListener("load", () => {
+heroImage.addEventListener("load", () => {// Ajoute un événement lorsque l'image est chargée
   heroImage.classList.remove("opacity-0"); // Fait apparaître l'image en fondu une fois chargée
 });
 
