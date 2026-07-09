@@ -1,3 +1,5 @@
+<div align="center">
+
 # Chocolatier Bakery Restaurant — Reproduction d'une maquette Figma
 
 **HTML5 · Tailwind CSS v4** — Projet réalisé dans le cadre de la formation **CDA (Simplon)**, 2026.
@@ -7,6 +9,8 @@ Reproduction pixel-close, **mobile first**, d'une maquette Figma « Chocolatier 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=flat&logo=tailwindcss&logoColor=white)
 ![Mobile First](https://img.shields.io/badge/Approche-Mobile%20First-96CDB0?style=flat)
+
+</div>
 
 ---
 
