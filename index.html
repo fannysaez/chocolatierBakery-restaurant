@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 <style type="text/tailwindcss">
   @theme {
     --color-ink: #1b0f16;
@@ -22,6 +23,7 @@
     --font-sans: "Inter", sans-serif;
   }
 </style>
+
 </head>
 <body class="bg-page text-ink font-sans">
 
@@ -64,8 +66,8 @@
             Order now
           </button>
         </div>
-        <div class="aspect-video md:aspect-[4/3] rounded-2xl bg-mist flex items-center justify-center">
-          <span class="text-ink/40 text-sm text-center px-4">Hero video /<br />ChocolatierCTA.mp4</span>
+        <div class="aspect-video md:aspect-[4/3] rounded-2xl bg-mist overflow-hidden">
+          <img src="https://picsum.photos/seed/chocolatier/800/600" alt="Chocolatier Bakery" class="w-full h-full object-cover" />
         </div>
       </div>
     </section>
