@@ -6,14 +6,16 @@ Extraite du Style Guide Figma, déclarée dans un bloc `@theme` (`index.html`, b
 
 | Token | Hex | Usage |
 | --- | --- | --- |
-| `ink` | `#1b0f16` | Texte principal, boutons primaires, fond du toast panier mobile |
-| `cocoa` | `#2c1524` | État `hover` des boutons sombres |
-| `rose` | `#a63c52` | Accents (labels, pastille produit) |
-| `sage` | `#7c9070` | Pastille produit (variante) |
+| `ink` | `#2b1810` | Texte principal, boutons primaires, fond du toast panier mobile |
+| `cocoa` | `#4a2c1d` | État `hover` des boutons sombres |
+| `rose` | `#8c3a2b` | Accents (labels, pastille produit) |
+| `sage` | `#a67c52` | Pastille produit (variante) |
 | `gold` | `#c9974c` | Pastille produit (variante) |
-| `cream` | `#f8e9d2` | Fond des cards Header / Hero |
-| `mist` | `#e9efe9` | Fond des blocs "image" des cards produit, placeholder vidéo |
+| `cream` | `#f5e6d3` | Fond des cards Header / Hero |
+| `mist` | `#ede1d1` | Fond des blocs "image" des cards produit |
 | `page` | `#fdf8f0` | Fond général de la page (plus clair que `cream`) |
+
+> Palette mise à jour pour un rendu plus "chocolatier" (bruns torréfiés, caramel, terracotta) — les noms de tokens n'ont pas changé, seules les valeurs hex ont été remplacées dans le bloc `@theme`. Voir le mécanisme en détail dans [09 · Vocabulaire Tailwind CSS](09-vocabulaire-tailwind.md).
 
 Trois tons de fond se superposent sur la page : `page` (fond général) → `cream` (cards Header/Hero) → `white` (cards produit/panier). C'est ce qui donne la profondeur visuelle de la maquette — un fond plat unique ne suffit pas.
 

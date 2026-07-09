@@ -42,4 +42,6 @@ Technique utilisée : afficher deux blocs distincts et cacher l'un ou l'autre se
 
 <p align="center">
   <a href="07-lancer-en-local.md"><img src="https://img.shields.io/badge/-PR%C3%89C%C3%89DENT-6b7280?style=for-the-badge" alt="PRÉCÉDENT"></a>
+  &nbsp;
+  <a href="09-vocabulaire-tailwind.md"><img src="https://img.shields.io/badge/-SUIVANT-C18D52?style=for-the-badge" alt="SUIVANT"></a>
 </p>

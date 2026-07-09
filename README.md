@@ -24,6 +24,7 @@ Toute la documentation détaillée du projet est découpée en pages, dans [`ass
 | 06 | [Technologies utilisées](assets/prototype-restaurant-chocolatier/06-technologies.md) | Tailwind CSS v4 (CDN), Google Fonts |
 | 07 | [Lancer le projet en local](assets/prototype-restaurant-chocolatier/07-lancer-en-local.md) | Clone, ouverture, serveur local |
 | 08 | [Approche responsive / mobile first](assets/prototype-restaurant-chocolatier/08-responsive-mobile-first.md) | Méthode mobile first, exemple concret |
+| 09 | [Vocabulaire Tailwind CSS](assets/prototype-restaurant-chocolatier/09-vocabulaire-tailwind.md) | Glossaire des classes utilitaires (layout, spacing, couleurs, responsive...) |
 
 ---
 
@@ -56,7 +57,8 @@ chocolatier-bakery-restaurant/
 │       ├── 05-sections-de-la-page.md
 │       ├── 06-technologies.md
 │       ├── 07-lancer-en-local.md
-│       └── 08-responsive-mobile-first.md
+│       ├── 08-responsive-mobile-first.md
+│       └── 09-vocabulaire-tailwind.md
 ├── index.html                             # Page unique (Header, Hero, Most ordered, Full menu, Cart)
 └── README.md
 ```

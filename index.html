@@ -11,13 +11,13 @@
 
 <style type="text/tailwindcss">
   @theme {
-    --color-ink: #1b0f16;
-    --color-cocoa: #2c1524;
-    --color-rose: #a63c52;
-    --color-sage: #7c9070;
+    --color-ink: #2b1810;
+    --color-cocoa: #4a2c1d;
+    --color-rose: #8c3a2b;
+    --color-sage: #a67c52;
     --color-gold: #c9974c;
-    --color-cream: #f8e9d2;
-    --color-mist: #e9efe9;
+    --color-cream: #f5e6d3;
+    --color-mist: #ede1d1;
     --color-page: #fdf8f0;
     --font-display: "Poppins", sans-serif;
     --font-sans: "Inter", sans-serif;
@@ -29,10 +29,10 @@
 
   <div class="max-w-6xl mx-auto px-4 md:px-6 pt-6 space-y-6">
 
-    <!-- Header -->
+    <!-- En-tête -->
     <header class="bg-cream border border-ink/10 rounded-2xl flex items-center justify-between px-5 py-3">
       <div class="flex items-center gap-2">
-        <span class="w-7 h-7 rounded-full bg-ink text-white text-[10px] font-bold flex items-center justify-center">CB</span>
+        <img src="assets/img/svg/logo-chocolatier.svg" alt="Chocolatier Bakery" class="h-14 w-auto" />
         <span class="font-display font-semibold text-sm md:text-base">Chocolatier Bakery</span>
       </div>
       <nav class="hidden md:flex items-center gap-8 text-sm text-ink/70">
@@ -46,7 +46,7 @@
       </button>
     </header>
 
-    <!-- Hero -->
+    <!-- Héros -->
     <section class="bg-cream border border-ink/10 rounded-3xl p-6 md:p-12">
       <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <!-- Most ordered -->
+    <!-- Les plus commandés -->
     <section id="menu" class="py-4">
       <h2 class="md:hidden font-display font-bold text-2xl mb-6">Most ordered</h2>
       <div class="hidden md:block mb-6">
@@ -117,7 +117,7 @@
       </div>
     </section>
 
-    <!-- Ten ways -->
+    <!-- Menu complet -->
     <section class="py-4">
       <p class="text-rose text-xs font-semibold tracking-widest uppercase mb-2">Full menu</p>
       <h2 class="font-display font-bold text-2xl mb-6">Ten ways to make the table feel special</h2>
@@ -216,7 +216,7 @@
       </div>
     </section>
 
-    <!-- Cart bar (desktop) -->
+    <!-- Barre du panier (bureau) -->
     <section class="hidden md:block pb-8">
       <div class="bg-white rounded-2xl shadow-sm px-6 py-5 flex items-center justify-between">
         <div>
@@ -230,7 +230,7 @@
       </div>
     </section>
 
-    <!-- Cart toast (mobile) -->
+    <!-- Notification du panier (mobile) -->
     <section class="md:hidden pb-8">
       <div class="bg-ink text-white rounded-full px-6 py-4 flex items-center justify-center gap-2 text-sm">
         <span class="font-semibold">Added to your cart!</span>
