@@ -30,6 +30,7 @@ Toute la documentation détaillée du projet est découpée en pages, dans [`ass
 | 08 | [Approche responsive / mobile first](assets/prototype-restaurant-chocolatier/08-responsive-mobile-first.md) | Méthode mobile first, exemple concret |
 | 09 | [Vocabulaire Tailwind CSS](assets/prototype-restaurant-chocolatier/09-vocabulaire-tailwind.md) | Glossaire des classes utilitaires (layout, spacing, couleurs, responsive...) |
 | 10 | [Interactivité JavaScript](assets/prototype-restaurant-chocolatier/10-interactivite-javascript.md) | Menu burger mobile fonctionnel, image hero aléatoire avec ombre et transition |
+| 11 | [Images produits sur les cards](assets/prototype-restaurant-chocolatier/11-images-produits-cards.md) | Remplacement des pastilles de couleur par de vraies photos (Most ordered, Full menu) |
 
 ---
 
@@ -54,10 +55,18 @@ chocolatier-bakery-restaurant/
 │   ├── img/
 │   │   ├── svg/
 │   │   │   └── logo-chocolatier.svg
-│   │   └── hero/                          # Photos locales pour l'image du Hero (aléatoire)
-│   │       ├── photo-1.webp
-│   │       ├── photo-2.webp
-│   │       └── photo-3.webp
+│   │   ├── hero/                          # Photos locales pour l'image du Hero (aléatoire)
+│   │   │   ├── photo-1.webp
+│   │   │   ├── photo-2.webp
+│   │   │   └── photo-3.webp
+│   │   ├── order/                         # Photos des 3 cards "Most ordered"
+│   │   │   ├── photo-1.webp
+│   │   │   ├── photo-2.webp
+│   │   │   └── photo-3.webp
+│   │   └── specialite/                    # Photos des 10 cards "Full menu"
+│   │       ├── image-1.webp
+│   │       ├── ...
+│   │       └── image-10.webp
 │   ├── maquette/                          # Exports de la maquette Figma (référence visuelle)
 │   │   ├── 01-desktop.png
 │   │   └── 02-mobile.png
@@ -71,7 +80,8 @@ chocolatier-bakery-restaurant/
 │       ├── 07-lancer-en-local.md
 │       ├── 08-responsive-mobile-first.md
 │       ├── 09-vocabulaire-tailwind.md
-│       └── 10-interactivite-javascript.md
+│       ├── 10-interactivite-javascript.md
+│       └── 11-images-produits-cards.md
 ├── index.html                             # Page unique (Header, Hero, Most ordered, Full menu, Cart)
 ├── script.js                              # Menu burger mobile + image hero aléatoire
 └── README.md

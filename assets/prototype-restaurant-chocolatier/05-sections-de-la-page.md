@@ -39,22 +39,25 @@ Là encore, mobile et desktop **n'affichent pas le même texte** : le mobile sim
 
 ```html
 <article class="bg-white rounded-2xl shadow-sm overflow-hidden">
-  <div class="bg-mist p-6 flex items-center">
-    <span class="block w-9 h-9 rounded-full bg-rose"></span>
+  <div class="bg-mist">
+    <img src="assets/img/order/photo-1.webp" alt="Midnight Ganache Tart" class="w-full h-32 object-cover" />
   </div>
   <div class="p-4">
     <h3>...</h3>
     <p>...</p>
-    <p>$12</p>
+    <p class="flex items-center justify-between">
+      $12
+      <span class="block w-4 h-4 rounded-full bg-rose"></span>
+    </p>
   </div>
 </article>
 ```
 
-Point important repéré en comparant à la maquette : la pastille de couleur n'est **pas** posée directement sur le fond blanc de la card. Elle est dans un bloc "image placeholder" séparé (`bg-mist`), qui deviendra une vraie photo produit plus tard. `overflow-hidden` sur la card garantit que les coins arrondis du bloc `mist` du haut restent propres.
+Le bloc "image" (`bg-mist`) contenait à l'origine juste une pastille de couleur centrée — il affiche maintenant la vraie photo produit (`assets/img/order/`). La pastille de couleur n'a pas disparu : elle a été déplacée à côté du prix, en taille réduite, comme repère de catégorie. `overflow-hidden` sur la card garantit que les coins arrondis du bloc `mist` du haut restent propres. Détails complets dans [11 · Images produits sur les cards](11-images-produits-cards.md).
 
 ## Full menu ("Ten ways...")
 
-Même structure de card que "Most ordered", en grille `grid-cols-2 md:grid-cols-5` (2 colonnes mobile, 5 colonnes desktop → 2 lignes de 5 sur desktop). Les 10 cards partagent la même description placeholder ("Menu card with image, description, quantity, and add-to-cart control.") — c'est comme ça sur la maquette source, les vraies descriptions arriveront avec le contenu final.
+Même structure de card que "Most ordered" (photo + pastille à côté du prix, voir [11 · Images produits sur les cards](11-images-produits-cards.md)), en grille `grid-cols-2 md:grid-cols-5` (2 colonnes mobile, 5 colonnes desktop → 2 lignes de 5 sur desktop). Les photos vivent dans `assets/img/specialite/` (`image-1.webp` à `image-10.webp`). Les 10 cards partagent la même description placeholder ("Menu card with image, description, quantity, and add-to-cart control.") — c'est comme ça sur la maquette source, les vraies descriptions arriveront avec le contenu final.
 
 ## Cart — deux composants différents, pas un seul qui se redimensionne
 
