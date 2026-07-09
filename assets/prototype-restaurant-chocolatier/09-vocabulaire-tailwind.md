@@ -77,6 +77,10 @@ Les noms après `bg-`, `text-`, `border-` (`ink`, `rose`, `cocoa`...) ne sont pa
 | `object-cover` | `object-fit: cover` (image qui remplit son conteneur sans se déformer) |
 | `transition-colors` | Anime les changements de couleur (utilisé avec `hover:`) |
 
+
+---
+
+
 ## Responsive et états (préfixes)
 
 | Préfixe | Rôle |
