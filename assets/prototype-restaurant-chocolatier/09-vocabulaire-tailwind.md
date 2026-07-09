@@ -95,4 +95,6 @@ Les noms après `bg-`, `text-`, `border-` (`ink`, `rose`, `cocoa`...) ne sont pa
 
 <p align="center">
   <a href="08-responsive-mobile-first.md"><img src="https://img.shields.io/badge/-PR%C3%89C%C3%89DENT-6b7280?style=for-the-badge" alt="PRÉCÉDENT"></a>
+  &nbsp;
+  <a href="10-interactivite-javascript.md"><img src="https://img.shields.io/badge/-SUIVANT-C18D52?style=for-the-badge" alt="SUIVANT"></a>
 </p>

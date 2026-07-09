@@ -25,6 +25,7 @@ Toute la documentation détaillée du projet est découpée en pages, dans [`ass
 | 07 | [Lancer le projet en local](assets/prototype-restaurant-chocolatier/07-lancer-en-local.md) | Clone, ouverture, serveur local |
 | 08 | [Approche responsive / mobile first](assets/prototype-restaurant-chocolatier/08-responsive-mobile-first.md) | Méthode mobile first, exemple concret |
 | 09 | [Vocabulaire Tailwind CSS](assets/prototype-restaurant-chocolatier/09-vocabulaire-tailwind.md) | Glossaire des classes utilitaires (layout, spacing, couleurs, responsive...) |
+| 10 | [Interactivité JavaScript](assets/prototype-restaurant-chocolatier/10-interactivite-javascript.md) | Menu burger mobile fonctionnel, image hero aléatoire avec ombre et transition |
 
 ---
 
@@ -46,6 +47,13 @@ Exports de la maquette Figma utilisés comme référence visuelle pour la reprod
 ```text
 chocolatier-bakery-restaurant/
 ├── assets/
+│   ├── img/
+│   │   ├── svg/
+│   │   │   └── logo-chocolatier.svg
+│   │   └── hero/                          # Photos locales pour l'image du Hero (aléatoire)
+│   │       ├── photo-1.webp
+│   │       ├── photo-2.webp
+│   │       └── photo-3.webp
 │   ├── maquette/                          # Exports de la maquette Figma (référence visuelle)
 │   │   ├── 01-desktop.png
 │   │   └── 02-mobile.png
@@ -58,8 +66,10 @@ chocolatier-bakery-restaurant/
 │       ├── 06-technologies.md
 │       ├── 07-lancer-en-local.md
 │       ├── 08-responsive-mobile-first.md
-│       └── 09-vocabulaire-tailwind.md
+│       ├── 09-vocabulaire-tailwind.md
+│       └── 10-interactivite-javascript.md
 ├── index.html                             # Page unique (Header, Hero, Most ordered, Full menu, Cart)
+├── script.js                              # Menu burger mobile + image hero aléatoire
 └── README.md
 ```
 
